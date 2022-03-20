@@ -18,6 +18,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  background-color: #e7cdf1;
 }
 
 .container {
@@ -97,7 +98,8 @@ header a {
 .intro-img {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 20%;
 }
 
 .intro-right {
@@ -127,12 +129,15 @@ header a {
   text-align: center;
 }
 
-.skills {
+.skills,
+.lang {
   color: var(--pure-white);
   background-color: var(--accent);
 }
 
-.skills ul {
+.skills ul,
+.education ul,
+.lang ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -142,7 +147,9 @@ header a {
   list-style: none;
 }
 
-.skills li {
+.skills li,
+.education li,
+.lang li {
   padding: 10px 25px;
   background-color: var(--accent-light);
   border-radius: 4px;
@@ -168,4 +175,22 @@ header a {
   color: var(--pure-white);
   background-color: var(--accent);
   border-radius: 8px;
+}
+
+.social-icons {
+  text-align: center;
+}
+.social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.social-icons li a {
+  border-bottom: none;
+}
+.social-icons li img {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
 }
